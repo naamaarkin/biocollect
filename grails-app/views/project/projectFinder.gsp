@@ -116,10 +116,10 @@
         <g:if test="${!hubConfig.content?.hideProjectFinderHelpButtons}">
             <button class="btn btn-primary-dark btn-gettingstarted"
                     onclick="window.location = '${createLink(controller: 'home', action: 'gettingStarted')}'">
-                <i class="fas fa-info"></i> Getting started</button>
+                <i class="fas fa-info"></i> <g:message code="projectfinder.help.button.gettingstarted"/></button>
             <button class="btn btn-primary-dark btn-whatisthis"
                     onclick="window.location = '${createLink(controller: 'home', action: 'whatIsThis')}'">
-                <i class="fas fa-question"></i> What is this?</button>
+                <i class="fas fa-question"></i> <g:message code="projectfinder.help.button.whatisit"/></button>
         </g:if>
     </g:else>
 </content>

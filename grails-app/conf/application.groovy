@@ -3,17 +3,17 @@ aekosMintedDoi.url= "http://shared-uat.aekos.org.au:8080/AEKOS.AekosSearchPortal
 
 acsaUrl= 'http://csna.gaiaresources.com.au/wordpress/'
 
-bie.baseURL= "https://bie.ala.org.au"
-bieWs.baseURL= "https://bie-ws.ala.org.au"
+bie.baseURL= "https://species.cs-smnh.me"
+bieWs.baseURL= "https://species-ws.cs-smnh.me"
 
-biocache.baseURL= "https://biocache.ala.org.au"
+biocache.baseURL= "https://biocache.cs-smnh.me"
 
-biocollect.support.email.address= "biocollect-support@ala.org.au"
+biocollect.support.email.address= "support@cs-smnh.me"
 
-collectory.service.url= "https://collections.ala.org.au"
+collectory.service.url= "https://collections.cs-smnh.me"
 
 
-ecodata.baseURL= "https://ecodata.ala.org.au/"
+ecodata.baseURL= "https://ecodata.cs-smnh.me/"
 
 
 google {
@@ -27,9 +27,9 @@ environments {
                 temp.dir = "/data/biocollect/temp"
 //              system level config
                 server.port = 8087
-                serverURL = "http://devt.ala.org.au:8087"
-                biocollect.system.email.replyTo = "biocollect-dev<no-reply>@ala.org.au"
-                sender = "biocollect-dev@ala.org.au"
+                serverURL = "http://localhost:8087"
+                biocollect.system.email.replyTo = "support@cs-smnh.me"
+                sender = "support@cs-smnh.me"
                 debugUI = true
                 loggerLevel = "DEBUG"
         }
@@ -61,9 +61,9 @@ environments {
                 logging.dir = '.'
                 upload.images.path = '/tmp'
                 upload.images.url = grails.serverURL+'/image/'
-                ecodata.baseUrl = 'http://devt.ala.org.au:8080/'
-                ecodata.baseURL = 'http://devt.ala.org.au:8080'
-                ecodata.service.url = 'http://devt.ala.org.au:8080/ws'
+                ecodata.baseUrl = 'http://localhost:8080/'
+                ecodata.baseURL = 'http://localhost:8080'
+                ecodata.service.url = 'http://localhost:8080/ws'
                 pdfgen.baseURL = "http://devt.ala.org.au:${wiremock.port}/"
                 api_key='testapikey'
                 spatial.baseUrl = "http://localhost:${wiremock.port}"

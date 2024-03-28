@@ -282,14 +282,14 @@ ul.menu {
     vertical-align: middle;
 
     i {
-      margin-right: 5px;
-      margin-left: 0;
+      margin-inline-end: 5px;
+      margin-inline-start: 0;
       vertical-align: text-top;
       font-size: 112.5%;
     }
 
     &:not(:first-child) {
-      margin-left: 30px;
+      margin-inline-start: 30px;
     }
   }
 
@@ -491,7 +491,7 @@ ul.menu {
   border: none;
   display: block;
   width: 100%;
-  text-align: left;
+  text-align: start;
   color: $c-text-light;
   cursor: pointer;
   position: relative;
@@ -506,7 +506,7 @@ ul.menu {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     position: absolute;
-    right: 20px;
+    inset-inline-end: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 12px;

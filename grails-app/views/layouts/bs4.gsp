@@ -1,7 +1,7 @@
 <!doctype html>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <g:set bean="localeResolver" var="localeResolver"/>
-<html lang="${localeResolver.resolveLocale(request).getLanguage()}">
+<html lang="${localeResolver.resolveLocale(request).getLanguage()}" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;"/>
@@ -17,6 +17,14 @@
     <link href="${g.createLink(controller: 'hub', action: 'generateStylesheet')}?ver=${hubConfig.lastUpdated}" rel="stylesheet"/>
     <asset:stylesheet src="base-bs4.css"/>
     <asset:javascript src="base-bs4.js"/>
+<!--    <asset:script type="text/javascript">-->
+<!--      var fcConfig = {-->
+<!--       <g:applyCodec encodeAs="none">-->
+<!--        i18nURL: "${createLink(controller: 'home', action: 'i18n')}"-->
+<!--        </g:applyCodec>-->
+<!--      }-->
+<!--    </asset:script>-->
+<!--    <asset:javascript src="i18n.js" asset-defer="true"/>-->
     <g:layoutHead/>
 </head>
 
