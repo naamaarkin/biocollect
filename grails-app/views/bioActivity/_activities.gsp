@@ -14,7 +14,7 @@
                 <div id="sortBar" class="row d-flex">
                     <div class="col col-md-4 mb-3 order-1 order-md-0 pr-1">
                         <button data-toggle="collapse" data-target=".data-expander" aria-expanded="true" aria-controls="filters" class="btn btn-dark" title="Filter Data">
-                            <i class="fas fa-filter"></i> Filter Data
+                            <i class="fas fa-filter"></i> <g:message code="label.refine"/>
                         </button>
                     </div>
                     <div class="col col-sm-6 col-md-4 mb-3 text-right text-md-center order-2 order-md-1 pl-1">
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="filter-bar d-flex align-items-center">
-                    <h4>Applied Filters: </h4>
+                    <h4><g:message code = "label.applied.filters"/> </h4>
                     <!-- ko foreach: filterViewModel.selectedFacets -->
                     <button class="filter-item btn btn-sm btn-outline-dark">
                         <strong data-bind="visible: exclude " title="Exclude">[EXCLUDE]</strong>
@@ -68,7 +68,7 @@
                     </button>
                     <!-- /ko -->
                     <!-- ko if: (filterViewModel.selectedFacets() && (filterViewModel.selectedFacets().length > 0)) -->
-                    <button type="button" class="btn btn-sm btn-dark clear-filters"  data-bind="click: reset" aria-label="Clear all filters"><i class="far fa-trash-alt"></i> Clear All
+                    <button type="button" class="btn btn-sm btn-dark clear-filters"  data-bind="click: reset" aria-label="Clear all filters"><i class="far fa-trash-alt"></i> <g:message code="label.clear.all"/>
                     </button>
                     <!-- /ko -->
                 </div>
@@ -76,20 +76,20 @@
                 <div class="records-found">
                     <div class="row d-flex align-items-center justify-content-between">
                         <div class="order-0 col-6 col-xl-auto flex-shrink-1">
-                            <h4>Found <!-- ko text: total() --><!-- /ko --> record(s)</h4>
+                            <h4><g:message code="data.records.found"/> <!-- ko text: total() --><!-- /ko --> <g:message code="data.records.found.records"/></h4>
                         </div>
                         <div class="info order-2 order-xl-1 col-12 col-xl flex-grow-1 text-center mt-3 mt-xl-0">
                             <span class="item d-block d-md-inline">
                                 <i class="fas fa-lock"></i>
-                                Indicates that only project members can access the record
+                                <g:message code="data.table.legend.members"/>
                             </span>
                             <span class="item d-block d-md-inline">
                                 <i class="fas fa-caret-up fa-2x"></i>
-                                Indicates species absence record
+                                <g:message code="data.table.legend.absence"/>
                             </span>
                         </div>
                         <div class="order-1 order-xl-2 col-6 col-xl-auto flex-shrink-1 text-right">
-                            <span class="d-none" id="downloadStartedMsg"><i class="fa fa-spin fa-spinner"></i> Preparing download, please wait...</span>
+                            <span class="d-none" id="downloadStartedMsg"><i class="fa fa-spin fa-spinner"></i> <g:message code="site.details.downloading"/></span>
                         </div>
                     </div>
                     <div class="row" data-bind="visible: transients.showEmailDownloadPrompt()">
@@ -98,10 +98,10 @@
                                 <span class="fas fa-info-circle">&nbsp;&nbsp;</span>This download may take several minutes. Please provide your email address, and we will notify you by email when the download is ready.
                             </div>
                             <div class="form-group">
-                                <label for="email">Email address</label>
+                                <label for="email"><g:message code="project.survey.alert.emailaddress"/></label>
                                 <input type="email" class="form-control" id="email" data-bind="value: transients.downloadEmail" name="email">
                             </div>
-                            <button data-bind="click: asyncDownload" class="btn btn-primary-dark pt-1"><i class="fas fa-download">&nbsp;</i>Download</button>
+                            <button data-bind="click: asyncDownload" class="btn btn-primary-dark pt-1"><i class="fas fa-download">&nbsp;</i><g:message code="g.download"/></button>
                         </div>
                     </div>
                     <g:set var="divideSection" value="${hubConfig.content?.showNote && isProjectContributingDataToALA}"/>
@@ -157,14 +157,14 @@
                                         <div class="col-12 col-sm-7 pl-sm-1">
                                             <h4 data-bind="text: name"></h4>
                                             <ul class="detail-list">
-                                                <li><span class="label">Submitted On:</span>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.submitted"/></span>
                                                     <time aria-label="Date Submitted" >
                                                         <!-- ko text: $parent.lastUpdated.formattedDate --><!-- /ko -->
                                                     </time>
                                                 </li>
-                                                <li><span class="label">Recorded By:</span> <!-- ko text: $parent.ownerName --><!-- /ko --></li>
-                                                <li><span class="label">Survey Name:</span> <!-- ko text: $parent.name --><!-- /ko --></li>
-                                                <li><span class="label">Project Name:</span> <!-- ko text: $parent.projectName --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.recorded"/></span> <!-- ko text: $parent.ownerName --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.survey"/></span> <!-- ko text: $parent.name --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.project"/></span> <!-- ko text: $parent.projectName --><!-- /ko --></li>
                                             </ul>
                                             <div class="btn-space">
                                                 <a class="btn btn-primary-dark btn-sm"
@@ -200,14 +200,14 @@
                                         <div class="col-12 col-sm-7 pl-sm-1">
                                             <h4 data-bind="text: name"></h4>
                                             <ul class="detail-list">
-                                                <li><span class="label">Submitted On:</span>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.submitted"/></span>
                                                     <time aria-label="Date Submitted" >
                                                         <!-- ko text: lastUpdated.formattedDate --><!-- /ko -->
                                                     </time>
                                                 </li>
-                                                <li><span class="label">Recorded By:</span> <!-- ko text: ownerName --><!-- /ko --></li>
-                                                <li><span class="label">Survey Name:</span> <!-- ko text: name --><!-- /ko --></li>
-                                                <li><span class="label">Project Name:</span> <!-- ko text: projectName --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.recorded"/></span> <!-- ko text: ownerName --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.survey"/></span> <!-- ko text: name --><!-- /ko --></li>
+                                                <li><span class="label"><g:message code="data.table.recordDetails.project"/></span> <!-- ko text: projectName --><!-- /ko --></li>
                                             </ul>
                                             <div class="btn-space">
                                                 <a class="btn btn-primary-dark btn-sm"
@@ -354,32 +354,32 @@
                                         <div class="col-12">
                                             <ul class="detail-list m-0">
                                                 <li data-bind="if: $parent.eventDate.formattedDate">
-                                                    <span class="label">Recorded on:</span> <span
+                                                    <span class="label"><g:message code="data.table.recordDetails.recorded"/></span> <span
                                                         data-bind="text: $parent.eventDate.formattedDate"></span>
                                                     <span data-bind="visible: $parent.eventTime, text: $parent.eventTime"></span>
                                                 </li>
                                                 <li data-bind="if: $parents[1].lastUpdated">
-                                                    <span class="label">Submitted on:</span> <span
+                                                    <span class="label"><g:message code="data.table.recordDetails.submitted"/></span> <span
                                                         data-bind="text: $parents[1].lastUpdated.formattedDate"></span>
                                                 </li>
                                                 <li data-bind="if: $parents[1].ownerName">
-                                                    <span class="label">Recorded by:</span> <span
+                                                    <span class="label"><g:message code="data.table.recordDetails.recorded"/></span> <span
                                                         data-bind="text: $parents[1].ownerName"></span>
                                                 </li>
                                                 <li class="text-truncate" data-bind="if: $parent.coordinates && $parent.coordinates[0]">
-                                                    <span class="label">Coordinate:</span> <span class="display-inline-block text-truncate"
+                                                    <span class="label"><g:message code="data.table.recordDetails.coordinate"/></span> <span class="display-inline-block text-truncate"
                                                                       data-bind="text: $parent.coordinates[0], attr: {title: $parent.coordinates[0]}"></span>
                                                     <span class="display-inline-block text-truncate"
                                                           data-bind="text: ',' + $parent.coordinates[1], attr: {title: $parent.coordinates[1]}"></span>
                                                 </li>
                                                 <li data-bind="if: $parents[1].name() && !fcConfig.hideProjectAndSurvey">
-                                                    <span class="label">Survey name:</span>
+                                                    <span class="label"><g:message code="data.table.recordDetails.survey"/></span>
                                                     <a data-bind="attr:{'href': $parents[1].transients.addUrl}">
                                                         <span data-bind="text: $parents[1].name"></span>
                                                     </a>
                                                 </li>
                                                 <li data-bind="if: $parents[1].projectName() && !fcConfig.hideProjectAndSurvey">
-                                                    <span class="label">Project name:</span> <a
+                                                    <span class="label"><g:message code="data.table.recordDetails.project"/></span> <a
                                                         data-bind="attr:{'href': $parents[1].projectUrl()}"><span
                                                             data-bind="text: $parents[1].projectName"></span></a>
                                                 </li>
@@ -461,21 +461,21 @@
                                         <div class="col-12">
                                             <ul class="detail-list m-0">
                                                 <li data-bind="visible: $parent.lastUpdated">
-                                                   <span class="label">Submitted on:</span> <span
+                                                   <span class="label"><g:message code="data.table.recordDetails.submitted"/></span> <span
                                                         data-bind="text: $parent.lastUpdated.formattedDate"></span>
                                                 </li>
                                                 <li data-bind="visible: $parent.ownerName">
-                                                    <span class="label">Recorded by:</span> <span
+                                                    <span class="label"><g:message code="data.table.recordDetails.recorded"/></span> <span
                                                         data-bind="text: $parent.ownerName"></span>
                                                 </li>
                                                 <li data-bind="visible: $parent.name() && !fcConfig.hideProjectAndSurvey">
-                                                    <span class="label">Survey name:</span>
+                                                    <span class="label"><g:message code="data.table.recordDetails.survey"/></span>
                                                     <a data-bind="attr:{'href': $parent.transients.addUrl}">
                                                         <span data-bind="text: $parent.name"></span>
                                                     </a>
                                                 </li>
                                                 <li data-bind="visible: $parent.projectName() && !fcConfig.hideProjectAndSurvey">
-                                                    <span class="label">Project name:</span> <a
+                                                    <span class="label"><g:message code="data.table.recordDetails.project"/></span> <a
                                                         data-bind="attr:{'href': $parent.projectUrl()}"><span
                                                             data-bind="text: $parent.projectName"></span></a>
                                                 </li>

@@ -84,12 +84,12 @@
                     <b class="caret"></b>
                 </a>
             </div>
-            <h3 style="margin-bottom:0;">Filter results</h3>
-            <button class="btn btn-small facetSearch"><i class="icon-filter"></i>Refine</button>
-            <button class="btn btn-small clearFacet"><i class="icon-remove-sign"></i>Clear all</button>
+            <h3 style="margin-bottom:0;"><g:message code="label.filter.results"/></h3>
+            <button class="btn btn-small facetSearch"><i class="icon-filter"></i><g:message code="label.refine"/></button>
+            <button class="btn btn-small clearFacet"><i class="icon-remove-sign"></i><g:message code="label.clear.all"/></button>
             <g:if test="${params.fq}">
                 <div class="currentFilters">
-                    <h4>Current filters</h4>
+                    <h4><g:message code="project.search.currentFilters"/></h4>
                     <ul>
                     <%-- convert either Object and Object[] to a list, in case there are multiple params with same name --%>
                         <g:set var="fqList" value="${[params.fq].flatten().findAll { it != null }}"/>

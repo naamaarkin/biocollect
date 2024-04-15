@@ -52,7 +52,7 @@ facets:
 pingDuration: 300000
 
 headerAndFooter:
-  baseURL: "https://www.ala.org.au/commonui-bs2" #"https://www.ala.org.au/commonui-bs2-v2/commonui-bs2"
+  baseURL: "https://branding.cs-smnh.me/brand-2023" #"https://www.ala.org.au/commonui-bs2-v2/commonui-bs2"
   header:
     - contentType: "content"
       displayName: "Search"

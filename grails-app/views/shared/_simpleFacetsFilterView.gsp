@@ -5,8 +5,8 @@
     </button>
 
     <div class="title">
-        <h3>Filters</h3>
-        <button class="btn btn-sm btn-dark facetSearch" data-bind="click: mergeTempToRefine"><i class="fas fa-filter"></i> Refine</button>
+        <h3><g:message code="label.filters"/></h3>
+        <button class="btn btn-sm btn-dark facetSearch" data-bind="click: mergeTempToRefine"><i class="fas fa-filter"></i> <g:message code="label.refine"/></button>
     </div>
     <div class="filter-group">
 

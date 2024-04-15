@@ -58,9 +58,9 @@
 
 /* project finder */
 .scistarter-logo-pf {
-    right: 0;
+    inset-inline-end: 0;
     top: 0;
-    padding-right: 15px;
+    padding-inline-end: 15px;
 }
 
 .project-logo {
@@ -99,15 +99,15 @@
     max-width: 16px;
     height: 16px;
     max-height: 16px;
-    margin-right: 5px;
+    margin-inline-end: 5px;
     vertical-align: middle;
 }
 
 .project-tag {
-    background: orange;
+    background: red;
     color: white;
     padding: 4px;
-    margin-right: 6px;
+    margin-inline-end: 6px;
     white-space: nowrap;
 }
 
@@ -131,13 +131,13 @@
 
 @media (min-width: 576px) {
     #survey-all-activities-and-records-content .data-container.show {
-        padding-left:330px
+        padding-inline-start:330px
     }
 }
 
 @media (min-width: 768px) {
     #survey-all-activities-and-records-content .data-container.show {
-        padding-left:360px
+        padding-inline-start:360px
     }
 }
 /* end all records */
@@ -208,7 +208,7 @@
 /* END needed by project index, edit pages */
 /*search sites*/
 div.dataTables_wrapper div.dataTables_filter input{
-    margin-left: 0;
+    margin-inline-start: 0;
 }
 /*end search sites*/
 /** Permissions table */
@@ -241,7 +241,7 @@ select[name=project-list_length]{
 #floating-save {
     position: fixed;
     bottom:0;
-    left:0;
+    inset-inline-start:0;
     width:100%;
     height:40px;
 }
@@ -255,7 +255,7 @@ select[name=project-list_length]{
 
     position: absolute;
     top: 0;
-    left:0;
+    inset-inline-start:0;
     padding-top: 5px;
     padding-bottom:5px;
     text-align:center;

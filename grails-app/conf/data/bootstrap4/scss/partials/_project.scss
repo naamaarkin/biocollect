@@ -1,9 +1,9 @@
 .project-title {
   background-color: rgba($c-text, 0.8);
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   bottom: 0;
-  right: 0;
+  inset-inline-end: 0;
   color: #FFF;
   z-index: 10;
   padding-top: 20px;
@@ -34,7 +34,7 @@
 
 
     @include media-breakpoint-up(md) {
-      text-align: right;
+      text-align: end;
       .status {
         font-size: 18px;
       }
@@ -92,7 +92,7 @@
     text-decoration: none;
     color: $c-text;
     border: none;
-    border-right: 1px solid darken($primary, 15%);
+    border-inline-end: 1px solid darken($primary, 15%);
     z-index: 10;
     position: relative;
     font-size: 18px;
@@ -109,7 +109,7 @@
     }
   }
   .nav-item:first-child .nav-link {
-    border-left: 1px solid darken($primary, 15%);
+    border-inline-start: 1px solid darken($primary, 15%);
   }
 }
 
@@ -142,7 +142,7 @@
   margin-bottom: 30px;
   input {
     flex-grow: 1;
-    margin-right: -1px;
+    margin-inline-end: -1px;
   }
   select {
     width: auto;
@@ -175,7 +175,7 @@
     flex: 0 0 85px;
     width: 85px;
     height: 85px;
-    margin-right: 20px;
+    margin-inline-end: 20px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -192,7 +192,7 @@
     .hover {
       position: absolute;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       width: 100%;
       height: 100%;
       display: flex;
@@ -226,7 +226,7 @@
     .author {
       font-size: 14px;
       color: $gray-500;
-      margin-right: 10px;
+      margin-inline-end: 10px;
     }
     .btn {
       font-size: 12px;
@@ -235,7 +235,7 @@
   .role {
     font-size: 14px;
     color: $gray-500;
-    margin-right: 10px;
+    margin-inline-end: 10px;
   }
   @include media-breakpoint-down(xs) {
     padding: 15px;
@@ -244,7 +244,7 @@
       flex: 0 0 50px;
       width: 50px;
       height: 50px;
-      margin-right: 15px;
+      margin-inline-end: 15px;
       i {
         font-size: 26px;
       }
@@ -269,7 +269,7 @@
     .status {
       position: absolute;
       top: 0;
-      right: 0;
+      inset-inline-end: 0;
       padding: 10px 15px;
       background-color: rgba($c-text, 0.8);
       color: #FFF;
@@ -303,7 +303,7 @@
         font-size: 12px;
       }
       .btn-sm:not(:nth-child(1)) {
-        margin-left: 15px;
+        margin-inline-start: 15px;
       }
     }
   }
@@ -314,7 +314,7 @@
           min-width: 25%;
           margin-bottom: 10px;
           &.btn-link:last-of-type {
-            margin-left: 15px;
+            margin-inline-start: 15px;
           }
         }
       }
@@ -338,7 +338,7 @@
           margin-right: 10px;
         }
         &.btn-link:last-of-type {
-          margin-left: 0;
+          margin-inline-start: 0;
         }
       }
     }

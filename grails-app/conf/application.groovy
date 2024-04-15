@@ -167,36 +167,36 @@ datapage.allColumns = datapage.defaultColumns + [
         [
                 type: "property",
                 propertyName: "surveyYearFacet",
-                displayName: "Survey Year"
+                displayName: "שנת הסקר"
         ]
         ,
         [
                 type: "property",
                 propertyName: "projectNameFacet",
-                displayName: "Project name"
+                displayName: "שם הפרוייקט"
         ]
         ,
         [
                 type: "property",
                 propertyName: "projectActivityNameFacet",
-                displayName: "Survey name"
+                displayName: "שם הסקר"
         ]
         ,
         [
                 type: "property",
                 propertyName: "organisationNameFacet",
-                displayName: "Organisation name"
+                displayName: "שם הארגון"
         ]
         ,
         [
                 type: "property",
                 propertyName: "surveyMonthFacet",
-                displayName: "Survey month"
+                displayName: "חודש הסקר"
         ],
         [
                 type: "property",
                 propertyName: "isDataManagementPolicyDocumented",
-                displayName: ""
+                displayName: "האם מדיניות ניהול הנתונים מתועדת"
         ],
         [
                 type: "property",

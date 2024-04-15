@@ -3,7 +3,7 @@
 
         <div class="container">
 
-            <h2>News &amp; Events</h2>
+            <h2><g:message code="project.blog.newsevents.title"/></h2>
             <div class="blog-section">
                 <g:render template="/shared/blog" model="${[blog:blog, type:'News and Events']}"/>
 
@@ -22,7 +22,7 @@
 <g:if test="${hasProjectStories || hasLegacyProjectStories}">
     <div id="projectBlog" class="my-4 my-md-5">
         <div class="container">
-            <h2>Project stories</h2>
+            <h2><g:message code="project.blog.projectstories.title"/></h2>
             <div class="blog-section">
                 <div class="blog-section">
                     <g:render template="/shared/blog" model="${[blog:blog, type:'Project Stories']}"/>

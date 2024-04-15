@@ -7,7 +7,7 @@ nav#biocollectNav > ul {
     margin: 0;
     padding: 0;
     font-size: 0;
-    text-align: left;
+    text-align: start;
     background: rgb(43, 123, 117);
 }
 
@@ -61,8 +61,8 @@ nav#biocollectNav > ul > li a + ul {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
-    margin-right: 0;
+    inset-inline-end: 0;
+    margin-inline-end: 0;
     list-style-type: none;
 }
 nav#biocollectNav > ul > li a + ul li {
@@ -75,13 +75,13 @@ nav#biocollectNav > ul > li a + ul li {
     z-index: 3;
 }
 nav#biocollectNav > ul > li a + ul li a {
-    padding-left: 16px;
-    text-align: left;
+    padding-inline-start: 16px;
+    text-align: start;
     white-space: nowrap;
 }
 nav#biocollectNav > ul > li a + ul li a .fa {
     display: inline-block;
-    margin-right: 10px;
+    margin-inline-end: 10px;
     margin-bottom: 0;
 }
 nav#biocollectNav > ul > li a + ul li a:hover {
@@ -108,7 +108,7 @@ nav#biocollectNav ul#main > li > a.ala-link{
     padding-bottom: 10px;!important;
     color:white;
     font-size: large;
-    border-right: 0px dashed #d1f5d6;
+    border-inline-end: 0px dashed #d1f5d6;
 }
 
 nav#biocollectNav ul#main li a.ala-link:hover{
@@ -162,7 +162,7 @@ nav#biocollectNav .more li#acsa-banner {
 }
 
 nav#biocollectNav > ul > li#acsa-banner a{
-    border-right: 0px;
+    border-inline-end: 0px;
 }
 
 nav#biocollectNav .more li#acsa-text {
