@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  max-width: 1200px;
   height: $card-height;
   word-wrap: break-word;
   background-color: $card-bg;
@@ -84,7 +85,7 @@
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   color: $card-cap-color;
-  background-color: $card-cap-bg;
+  background-color: #cccccc;
   border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
@@ -265,6 +266,8 @@
 
 .accordion {
   overflow-anchor: none;
+  max-width: 1200px;
+  margin: 0 auto;
 
   > .card {
     overflow: hidden;

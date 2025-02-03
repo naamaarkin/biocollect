@@ -1,5 +1,5 @@
 <%@ page import="grails.converters.JSON; au.org.ala.biocollect.merit.SettingPageType" contentType="text/html;charset=UTF-8" %>
-<g:set var="mapService" bean="mapService"></g:set>
+<g:set var="mapService" xmlns:g="" xmlns:g="" bean="mapService"></g:set>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
 <head>

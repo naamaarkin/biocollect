@@ -213,7 +213,7 @@
             </div>
         </div>
     <!-- /ko -->
-        <div class="card">
+        <div class="card" style="display:none;">
             <div class="card-header">
                 <div class="row">
                     <div class="col-auto">
