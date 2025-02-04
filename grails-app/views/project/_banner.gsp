@@ -35,7 +35,7 @@
                             <div class="row" data-bind="visible:urlWeb">
                                 <div class="col-12 banner-image-container">
                                     %{--                                <img src="" data-bind="attr: {src: mainImageUrl}" class="banner-image"/>--}%
-                                    <a class="banner-image-caption text-reset text-decoration-none"
+                                    <a class="banner-image-caption text-reset" style="text-decoration: underline;"
                                        data-bind="visible:urlWeb, attr: {href: urlWeb}"><g:message
                                             code="g.visitUsAt"/></a>
                                 </div>

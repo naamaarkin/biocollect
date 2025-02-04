@@ -91,6 +91,11 @@
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
   }
+  .row{
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+  }
 }
 
 .card-footer {

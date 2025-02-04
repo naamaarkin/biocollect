@@ -45,7 +45,7 @@
                     <g:if test="${hubConfig.logoUrl}">
                     <!-- Your site title as branding in the menu -->
                     <a href="${g.createLink(uri: "/")}" class="custom-logo-link" rel="home" itemprop="url">
-                        <img class="hub-logo col-6 col-md-4 col-lg-2" src="${hubConfig.logoUrl}" />
+                        <img class="hub-logo col-8 col-md-4 col-lg-2" src="${hubConfig.logoUrl}" />
                     </a> <!-- end custom logo -->
                     </g:if>
                 </div>

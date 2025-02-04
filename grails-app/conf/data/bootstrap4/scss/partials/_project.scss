@@ -57,6 +57,7 @@
     .main-image {
       margin-top: -160px;
       margin-bottom: 20px;
+      display: none;
     }
   }
 
@@ -90,9 +91,9 @@
   .nav-link {
     padding: 25px 30px;
     text-decoration: none;
-    color: $c-text;
+    color: #FFFFFF;
     border: none;
-    border-inline-end: 1px solid darken($primary, 15%);
+    border-inline-end: 1px solid #FFFFFF;
     z-index: 10;
     position: relative;
     font-size: 18px;
@@ -105,7 +106,7 @@
     }
     &:hover {
       border-color: #FFF;
-      background-color: #FFF;
+      background-color: #495057;
     }
   }
   .nav-item:first-child .nav-link {
@@ -121,7 +122,7 @@
   .nav-row {
     .nav-link {
       padding: 15px 20px;
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }
@@ -133,7 +134,7 @@
     }
     .nav-link {
       padding: 15px 10px;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
@@ -435,5 +436,13 @@
 // project about tab
 $about-bg-color: transparentize($primary, 0.95);
 #cs-about .card-header {
-  background-color: #cccccc;
+  background-color: #f2f2f2;
 }
+
+.cs-about-section-header{
+ text-align: right;
+}
+
+.about-chevron-selector{
+ margin-right: 5px;
+ }
