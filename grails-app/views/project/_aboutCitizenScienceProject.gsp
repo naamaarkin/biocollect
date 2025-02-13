@@ -159,7 +159,7 @@
                     <g:if test="${!mobile}">
                         <div class="row mt-3">
                             <div id="surveyLink" class="col-12 d-flex justify-content-center" data-bind="visible:transients.daysRemaining() != 0 && (!isExternal() || urlWeb()) && projectType() == 'survey' ">
-                                <a class="btn btn-primary-dark btn-lg" data-bind="showTabOrRedirect: { url: isExternal() ? urlWeb() : '', tabId: '#activities-tab'}"><i class="fas fa-play"></i> <g:message code="project.display.join" /></a>
+                                <a class="btn btn-primary-dark btn-lg" data-bind="showTabOrRedirect: { url: isExternal() ? urlWeb() : '', tabId: '#activities-tab'}"><i class="fas fa-arrow-right"></i> <g:message code="project.display.join" /></a>
                             </div>
                         </div>
                     </g:if>
