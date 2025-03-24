@@ -1,7 +1,7 @@
 <!doctype html>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <g:set bean="localeResolver" var="localeResolver"/>
-<html lang="${localeResolver.resolveLocale(request).getLanguage()}">
+<html lang="${localeResolver.resolveLocale(request).getLanguage()}" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;"/>

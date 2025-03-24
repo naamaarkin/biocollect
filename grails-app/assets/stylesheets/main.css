@@ -34,6 +34,7 @@ html.no-cssgradients {
 
 html * {
 	margin: 0;
+	direction: rtl;
 }
 
 body {
