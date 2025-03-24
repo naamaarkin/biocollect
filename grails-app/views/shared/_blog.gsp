@@ -3,7 +3,7 @@
 <div id="${blogId}" class="row post-list">
     <span data-bind="if: entries().length == 0">
         <div class="col-12">
-            <h4>No entries available</h4>
+            <h4><g:message code="project.blog.noEntries"/></h4>
         </div>
     </span>
     <!-- ko foreach:entries -->
@@ -29,7 +29,7 @@
                 </div>
                 <div data-bind="html:content.markdownToHtml()"></div>
                 <a href="#" class="btn btn-sm btn-primary-dark" data-bind="visible:viewMoreUrl, attr:{href:viewMoreUrl}">
-                    <i class="far fa-eye"></i> View More
+                    <i class="far fa-eye"></i> <g:message code="project.blog.viewMore"/>
                 </a>
             </div>
         </div>

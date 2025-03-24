@@ -3,12 +3,12 @@
         <div class="input-group float-right">
             <input type="text" class="form-control list-search-text-input"
                    data-bind="value: searchTerm, valueUpdate: 'input', enter: search"
-                   placeholder="Search records" aria-label="Search records"
+                   placeholder="<g:message code='project.data.searchRecords'/>" aria-label="Search records"
                    aria-describedby="record-search-button">
 
             <div class="input-group-append">
                 <button class="btn btn-primary-dark" type="button" id="record-search-button" data-bind="click: search">
-                    <i class="fas fa-search"></i> Search
+                    <i class="fas fa-search"></i> <g:message code="g.search"/>
                 </button>
             </div>
         </div>

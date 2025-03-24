@@ -12,7 +12,7 @@
     <link rel="icon" href="https://www.ala.org.au/app/uploads/2019/01/cropped-favicon-192x192.png" sizes="192x192" />
     <link href="//fonts.googleapis.com/css?family=Lato:700,900|Roboto:400,400i,500" rel="stylesheet">
     <g:if test="${hubConfig.templateConfiguration?.header?.type == 'ala' || hubConfig.templateConfiguration?.footer?.type == 'ala'}">
-    <link rel="stylesheet" href="${grailsApplication.config.headerAndFooter.baseURL}/css/ala-theme.css"/>
+    <link rel="stylesheet" href="${grailsApplication.config.headerAndFooter.baseURL}/css/ala-styles.css"/>
     </g:if>
     <link href="${g.createLink(controller: 'hub', action: 'generateStylesheet')}?ver=${hubConfig.lastUpdated}" rel="stylesheet"/>
     <asset:stylesheet src="base-bs4.css"/>

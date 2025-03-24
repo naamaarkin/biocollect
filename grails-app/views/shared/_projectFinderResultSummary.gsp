@@ -9,7 +9,7 @@
     </div>
     <div class="col-6 col-md-4 mb-3 order-1 order-md-0">
         <button class="btn btn-dark project-finder-filters-expander" data-toggle="collapse" data-target=".expander" aria-expanded="true" aria-controls="expander" title="Filter Projects">
-            <i class="fas fa-filter"></i> Filter Projects
+            <i class="fas fa-filter"></i> <g:message code="projectfinder.filter.button"/>
         </button>
     </div>
     <div class="col-6 col-sm-6 col-md-4 mb-3 text-right text-md-center order-2 order-md-1">
@@ -30,12 +30,12 @@
     </div>
     <div class="col-12 col-md-4 text-center text-md-right order-0 order-md-2 pl-0 d-flex justify-content-end justify-content-md-end">
         <div class="form-group">
-            <label for="sortBy" class="col-form-label">Sort by</label>
+            <label for="sortBy" class="col-form-label"><g:message code ="g.sortBy"/></label>
             <select id="sortBy" class="form-control col custom-select" data-bind="value: sortBy" aria-label="Sort Order">
-                <option value="dateCreatedSort">Most Recent</option>
-                <option value="nameSort">Name</option>
-                <option value="_score">Relevance</option>
-                <option value="organisationSort">Organisation</option>
+                <option value="dateCreatedSort"><g:message code="projectfinder.sortby.date"/></option>
+                <option value="nameSort"><g:message code="projectfinder.sortby.name"/></option>
+                <option value="_score"><g:message code="projectfinder.sortby.score"/></option>
+                <option value="organisationSort"><g:message code="projectfinder.sortby.organisation"/></option>
             </select>
         </div>
         <div class="form-group ml-2 projects-from-select">
@@ -49,7 +49,7 @@
 </div>
 
 <div class="filter-bar d-flex align-items-center my-0">
-    <h4>Applied Filters: </h4>
+    <h4><g:message code = "projectfinder.filter.title"/></h4>
     <!-- ko if: isGeoSearchEnabled -->
     <button class="filter-item btn btn-sm btn-outline-dark"> <g:message code="projectfinder.geofilter"/> <span class="remove" data-bind="click: clearGeoSearch"><i class="far fa-trash-alt"></i></span></button>
     <!-- /ko -->

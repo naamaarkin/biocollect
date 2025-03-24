@@ -4,9 +4,9 @@
         <div class="row mb-2">
             <div class="col-sm-6 col-lg-3">
                 <div class="input-group search-resources">
-                    <label id="lblSearchResources" for="searchResources" class="sr-only">Search ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}</label>
+                    <label id="lblSearchResources" for="searchResources" class="sr-only"><g:message code="project.search.search"/> ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}</label>
                     <input class="form-control" id="searchResources" type="text" data-bind="value:searchDoc, hasFocus: searchHasFocus, valueUpdate:'keyup'"
-                           placeholder="Search ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}..." aria-label="Search ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}..." aria-describedby="lblSearchResources"/>
+                           placeholder="<g:message code='project.search.search'/> ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}..." aria-label="Search ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}..." aria-describedby="lblSearchResources"/>
                     <div class="input-group-append">
                         <button id="search" class="btn btn-primary-dark" data-bind="click: refreshPage(0)">
                             <i class="fas fa-search"></i>
@@ -17,7 +17,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <label for="searchType" class="input-group-text">Search in</label>
+                        <label for="searchType" class="input-group-text"><g:message code="project.documents.searchIn"/></label>
                     </div>
                     <select id="searchType" class="custom-select" data-bind="options: documentFilterFieldOptions, value: documentFilterField, optionsText: 'label'" aria-label="Filter"></select>
                 </div>
@@ -25,7 +25,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <label for="searchInRole" class="input-group-text">Filter by type</label>
+                        <label for="searchInRole" class="input-group-text"><g:message code="project.documents.searchInRole"/></label>
                     </div>
                     <select id="searchInRole" class="custom-select" data-bind="options:roleFilterFieldOptions, optionsText: 'name', optionsValue: 'id', value:roleFilterField"></select>
                 </div>
@@ -33,11 +33,11 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <label class="input-group-text"  for="sortBy">Sort by</label>
+                        <label class="input-group-text"  for="sortBy"><g:message code="g.sortBy"/></label>
                     </div>
                     <select id="sortBy" class="custom-select" data-bind="value: sortBy" aria-label="Sort Order">
-                        <option value="dateCreated">Recently uploaded</option>
-                        <option value="lastUpdated">Recently modified</option>
+                        <option value="dateCreated"><g:message code="project.doc.sortBy.uploaded"/></option>
+                        <option value="lastUpdated"><g:message code="project.doc.sortBy.updated"/></option>
                     </select>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         <div class="row mb-2">
             <div class="col-12">
                 <div class="border-top border-bottom border-dark py-3">
-                    <h6 class="m-0">Found <!-- ko text:pagination.totalResults --> <!-- /ko --> ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}</h6>
+                    <h6 class="m-0"><g:message code="g.found"/> <!-- ko text:pagination.totalResults --> <!-- /ko --> ${hubConfig.getTextForResources(grailsApplication.config.content.defaultOverriddenLabels)}</h6>
                 </div>
             </div>
         </div>
