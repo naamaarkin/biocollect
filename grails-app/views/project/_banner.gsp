@@ -57,14 +57,14 @@
                             <div class="date text-white">
                                 <div>
                                     <!-- ko if: plannedStartDate -->
-                                    <span class="label">Start date:</span>
+                                    <span class="label">תאריך התחלה:</span>
                                     <!-- ko text: moment(plannedStartDate()).format('DD MMMM, YYYY') --> <!-- /ko -->
                                     <!-- /ko -->
                                 </div>
 
                                 <div>
                                     <!-- ko if: plannedEndDate -->
-                                    <span class="label">End date:</span>
+                                    <span class="label">תאריך סיום:</span>
                                     <!-- ko text: moment(plannedEndDate()).format('DD MMMM, YYYY') --> <!-- /ko -->
                                     <!-- /ko -->
                                 </div>

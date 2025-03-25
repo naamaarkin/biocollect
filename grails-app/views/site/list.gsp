@@ -73,7 +73,7 @@
                                 aria-controls="filters"
                                 class="btn btn-dark"
                                 title="Filter Data">
-                            <i class="fas fa-filter"></i> <g:message code="projectfinder.filter.button">
+                            <i class="fas fa-filter"></i> <g:message code="projectfinder.filter.button"/>
                         </button>
                     </div>
                     <div class="col col-sm-6 col-md-4 mb-3 text-right text-md-center order-2 order-md-1 pl-1">
