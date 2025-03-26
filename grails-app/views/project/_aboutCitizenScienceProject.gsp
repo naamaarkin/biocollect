@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-11">
                         <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#cs-about-section1" aria-expanded="true" aria-controls="cs-about-section1">
-                            <h2 class="p-0 mb-0">
+                            <h2 class="p-0 mb-0 cs-about-section-header">
                                 ${hubConfig.getTextForAboutTheProject(grailsApplication.config.content.defaultOverriddenLabels)}
                             </h2>
                         </button>
@@ -42,10 +42,10 @@
                     </div>
                     <div class="col-11">
                         <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#cs-about-section2" aria-expanded="false" aria-controls="cs-about-section2">
-                            <h2 class="p-0 mb-0" data-bind="visible:projectType() == 'survey'">
+                            <h2 class="p-0 mb-0 cs-about-section-header" data-bind="visible:projectType() == 'survey'">
                                 <g:message code="project.display.involved" />
                             </h2>
-                            <h2 class="p-0 mb-0" data-bind="visible:projectType() != 'survey'">
+                            <h2 class="p-0 mb-0 cs-about-section-header" data-bind="visible:projectType() != 'survey'">
                                 ${hubConfig.getTextForProjectInformation(grailsApplication.config.content.defaultOverriddenLabels)}
                             </h2>
                         </button>
@@ -159,7 +159,7 @@
                     <g:if test="${!mobile}">
                         <div class="row mt-3">
                             <div id="surveyLink" class="col-12 d-flex justify-content-center" data-bind="visible:transients.daysRemaining() != 0 && (!isExternal() || urlWeb()) && projectType() == 'survey' ">
-                                <a class="btn btn-primary-dark btn-lg" data-bind="showTabOrRedirect: { url: isExternal() ? urlWeb() : '', tabId: '#activities-tab'}"><i class="fas fa-play"></i> <g:message code="project.display.join" /></a>
+                                <a class="btn btn-primary-dark btn-lg" data-bind="showTabOrRedirect: { url: isExternal() ? urlWeb() : '', tabId: '#activities-tab'}"><i class="fas fa-arrow-left"></i> <g:message code="project.display.join" /></a>
                             </div>
                         </div>
                     </g:if>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="col-11">
                         <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#cs-about-section4" aria-expanded="false" aria-controls="cs-about-section4">
-                            <h2 class="p-0 mb-0">
+                            <h2 class="p-0 mb-0 cs-about-section-header">
                                 ${hubConfig.getTextForProjectArea(grailsApplication.config.content.defaultOverriddenLabels)}</h2>
                         </button>
                     </div>
@@ -203,7 +203,7 @@
                     </div>
                     <div class="col-11">
                         <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#cs-about-section3" aria-expanded="false" aria-controls="cs-about-section3">
-                            <h2 class="p-0 mb-0"><g:message code="project.display.associatedOrgs"/></h2>
+                            <h2 class="p-0 mb-0 cs-about-section-header"><g:message code="project.display.associatedOrgs"/></h2>
                         </button>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="col-11">
                         <button class="btn btn-link btn-block p-0" type="button" data-toggle="collapse" data-target="#cs-about-section5" aria-expanded="false" aria-controls="cs-about-section5">
-                            <h2 class="p-0 mb-0"><g:message code="project.display.other"/></h2>
+                            <h2 class="p-0 mb-0 cs-about-section-header"><g:message code="project.display.other"/></h2>
                         </button>
                     </div>
                 </div>

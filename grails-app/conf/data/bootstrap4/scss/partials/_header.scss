@@ -139,7 +139,7 @@
       position: relative;
       text-decoration: none;
       font-size: 18px;
-      color: #FFF;
+      color: #404040;
 
       &:before {
         content: '';
@@ -255,7 +255,7 @@
 
 .navbar-toggler-icon {
   background: $c-text;
-  height: 1px;
+  height: 2px;
   margin: 14px 0;
   position: relative;
   transition: all 600ms ease;
@@ -493,7 +493,7 @@
     padding-left: 1rem !important;
     overflow-y: auto;
     visibility: hidden;
-    background-color: $gray-800;
+    background-color: $menu-background-color;
     transition-timing-function: ease;
     transition-duration: 400ms;
     transition-property: right, visibility;
