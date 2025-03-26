@@ -217,13 +217,13 @@ textarea.form-control {
 .form-check {
   position: relative;
   display: block;
-  padding-left: $form-check-input-gutter;
+  padding-inline-start: $form-check-input-gutter;
 }
 
 .form-check-input {
   position: absolute;
   margin-top: $form-check-input-margin-y;
-  margin-left: -$form-check-input-gutter;
+  margin-inline-start: -$form-check-input-gutter;
 
   // Use [disabled] and :disabled for workaround https://github.com/twbs/bootstrap/issues/28247
   &[disabled] ~ .form-check-label,

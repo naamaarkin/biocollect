@@ -11,12 +11,12 @@
     transition: padding 500ms ease;
     @include media-breakpoint-up(sm) {
       &.show {
-        padding-left: 330px;
+        padding-inline-start: 330px;
       }
     }
     @include media-breakpoint-up(md) {
       &.show {
-        padding-left: 360px;
+        padding-inline-start: 360px;
       }
     }
   }
@@ -27,7 +27,7 @@
   .btn {
     font-size: inherit;
     i {
-      margin-left: 0;
+      margin-inline-start: 0;
     }
   }
   .btn-dark {
@@ -36,7 +36,7 @@
   label {
     font-size: 12px;
     color: $c-text-light;
-    margin-right: 10px;
+    margin-inline-end: 10px;
   }
   select {
     width: auto;
@@ -85,7 +85,7 @@
     display: block;
     position: absolute;
     top: -12px;
-    left: 65px;
+    inset-inline-start: 65px;
     border-style: solid;
     border-width: 0 8px 12px;
     border-color: transparent transparent $c-text transparent;
@@ -228,14 +228,14 @@
 
 #filters {
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0;
   background: #FFF;
   padding: 30px;
   width: 330px;
   z-index: 999;
   border: 1px solid $gray-900;
-  border-left: none;
+  border-inline-start: none;
   display: flex;
   flex-direction: column;
   @include media-breakpoint-down(lg) {
@@ -263,7 +263,7 @@
   .close {
     position: absolute;
     top: 10px;
-    right: 10px;
+    inset-inline-end: 10px;
   }
 
   .title {
@@ -301,3 +301,12 @@
     }
   }
 }
+[dir = "rtl"] #filters {
+   &.collapse, &.collapsing {
+     transform: translateX(110%);
+     transition: transform 500ms ease !important;
+     &.show {
+       transform: translateX(0);
+     }
+   }
+ }

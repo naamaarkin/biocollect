@@ -28,7 +28,7 @@
  */
 div.DTTT_container {
 	position: relative;
-	float: right;
+	float: inline-end;
 	margin-bottom: 1em;
 }
 
@@ -53,7 +53,7 @@ div.DTTT_button,
 a.DTTT_button {
 	position: relative;
 	display: inline-block;
-	margin-right: 3px;
+	margin-inline-end: 3px;
 	padding: 5px 8px;
 	border: 1px solid #999;
 	cursor: pointer;
@@ -199,12 +199,12 @@ a.DTTT_button_print:hover span { background: #f0f0f0 url(../images/print_hover.p
  */
 
 button.DTTT_button_collection span {
-	padding-right: 17px;
+	padding-inline-end: 17px;
 	background: url(../images/collection.png) no-repeat center right;
 }
 
 button.DTTT_button_collection:hover span {
-	padding-right: 17px;
+	padding-inline-end: 17px;
 	background: #f0f0f0 url(../images/collection_hover.png) no-repeat center right;
 }
 
@@ -312,10 +312,10 @@ div.DTTT_collection a.DTTT_button {
 .DTTT_print_info {
 	position: fixed;
 	top: 50%;
-	left: 50%;
+	inset-inline-start: 50%;
 	width: 400px;
 	height: 150px;
-	margin-left: -200px;
+	margin-inline-start: -200px;
 	margin-top: -75px;
 	text-align: center;
 	color: #333;
