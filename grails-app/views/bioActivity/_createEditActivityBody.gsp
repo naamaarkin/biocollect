@@ -94,10 +94,10 @@
         <g:render template="/shared/termsOfUse"/>
         <br>
         <g:if test="${!preview}">
-            <button type="button" id="save" class="btn btn-primary-dark btn-lg"><i class="fas fa-upload"></i> Submit</button>
+            <button type="button" id="save" class="btn btn-primary-dark btn-lg"><i class="fas fa-upload"></i><g:message code="g.submit"/></button>
         </g:if>
         <g:if test="${bulkUpload || (showCreate && !mobile && !preview)}">
-            <button type="button" id="cancel" class="btn btn-dark btn-lg"><i class="far fa-times-circle"></i> Cancel</button>
+            <button type="button" id="cancel" class="btn btn-dark btn-lg"><i class="far fa-times-circle"></i><g:message code="g.cancel"/></button>
         </g:if>
     </div>
 </g:if>
