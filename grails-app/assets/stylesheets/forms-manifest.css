@@ -59,7 +59,7 @@
     position: absolute;               /* 2 */
     top: 50%;                         /* 3 */
     transform: translate(0, -50%);
-    left: 85px;
+    inset-inline-start: 85px;
 
 }
 
