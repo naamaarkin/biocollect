@@ -292,3 +292,17 @@ select[name=project-list_length]{
     height: 200px;
 }
 /* END bulk import index*/
+
+@media (min-width: 600px) {
+  #banner:not(.project-banner) { height: 180px !important; }
+  #banner:not(.project-banner) .banner-title h1 {
+          display: none !important;
+      }
+}
+
+@media (max-width: 600px) {
+  #banner:not(.project-banner) { height: 100px !important; }
+  #banner:not(.project-banner) .banner-title h1 {
+          display: none !important;
+      }
+}
